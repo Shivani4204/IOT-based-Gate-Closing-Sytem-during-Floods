@@ -50,3 +50,17 @@
      |  +5V regulated supply for sensors + Arduino           |
      |  External 7-12V for servos (if high torque)           |
      +-------------------------------------------------------+
+
+| Component             | Arduino Pin | Notes                          |
+| --------------------- | ----------- | ------------------------------ |
+| HC-SR04 (Top) Echo    | D2          | Above bridge (human detection) |
+| HC-SR04 (Top) Trig    | D4          |                                |
+| HC-SR04 (Bottom) Echo | D5          | Under bridge (flood detection) |
+| HC-SR04 (Bottom) Trig | D3          |                                |
+| IR Entry              | D6          | Active LOW, pull-up enabled    |
+| IR Exit               | D7          | Active LOW, pull-up enabled    |
+| Servo Left            | D9          | PWM pin                        |
+| Servo Right           | D10         | PWM pin                        |
+| MPU6050 SDA           | A4          | I2C Data                       |
+| MPU6050 SCL           | A5          | I2C Clock                      |
+
